@@ -1,0 +1,23 @@
+
+AWS EC2 remote control tool
+
+Copyright: The International Centre for Radio Astronomy Research, The University
+            of Western Australia. 2016
+Contact: slava.kitaeff@icrar.org
+
+The tool allows starting ICRAR astronomy services deployed in AWS EC2.
+
+You'll need Python 2.3 or higher to use AWS EC2 remote control tool.
+
+1. Install
+
+        python setup.py install
+
+2. Configure
+
+Please ask your AWS administrator for aws_access_key_id, aws_secret_access_key,
+and instanceid of the service to be remotely controlled. Modify ".aws-vis.cfg"
+file in your home directory accordingly. Change region_name if necessary.
+
+3. Commands available
+    chiles-vis-start - will start visualisation service.
