@@ -18,7 +18,7 @@ if __name__ == '__main__':
         config.set('AWS-CHILES', 'region_name', 'us-west-2')
         config.set('AWS-CHILES', 'aws_access_key_id', '<Insert you aws_access_key_id here>')
         config.set('AWS-CHILES', 'aws_secret_access_key', '<Insert you aws_secret_access_key here>')
-        config.set('AWS-CHILES', 'instanceID', '<Insert instance ID here>')
+        config.set('AWS-CHILES', 'vis_instanceID', '<Insert instance ID for visualisation serive here>')
 
         with open(filename, 'wb') as configfile:
             config.write(configfile)

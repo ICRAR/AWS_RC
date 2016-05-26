@@ -7,7 +7,7 @@ try:
 except ImportError:
     print('Please run: python setup.py install')
 
-if __name__ == '__main__':
+def start_vis():
     try:
         filename = join(expanduser("~"),'.aws-vis.cfg')
         config = ConfigParser.RawConfigParser()
@@ -15,7 +15,7 @@ if __name__ == '__main__':
         region_name = config.get('AWS-CHILES', 'region_name')
         aws_access_key_id = config.get('AWS-CHILES', 'aws_access_key_id')
         aws_secret_access_key = config.get('AWS-CHILES', 'aws_secret_access_key')
-        instanceID = config.get('AWS-CHILES', 'instanceID')
+        instanceID = config.get('AWS-CHILES', 'vis_instanceID')
 
     except ImportError:
         print "Error: could not read configuration file %s!" % filename
@@ -34,3 +34,6 @@ if __name__ == '__main__':
 
     except ImportError:
         print 'Error: could not authenticate with AWS.'
+
+if __name__ == '__main__':
+    start_vis()
