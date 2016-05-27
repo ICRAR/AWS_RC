@@ -1,5 +1,5 @@
 
-AWS EC2 remote control tool
+--AWS EC2 remote control tool--
 
 Copyright: The International Centre for Radio Astronomy Research, The University
             of Western Australia. 2016
@@ -22,7 +22,13 @@ file in your home directory accordingly. Change region_name if necessary.
 3. Commands available
 
   3.1 start visualisation service
-  
+
     python ec2-start.py --vis
   or
     python ec2-start.py -v
+
+  3.2 start an instance
+
+    python ec2-start.py --instanceid=<ec2-instanceID>
+  or
+    python ec2-start.py -i ec2-instanceID

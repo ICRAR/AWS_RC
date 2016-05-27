@@ -12,6 +12,7 @@ except ImportError:
 
 help_line = "ec2-start.py or [-v or --vis] or [-i <ec2_instanceID> or --instanceid=<ec2_instanceID>"
 
+#read credentials from config file
 def read_conf(config):
     try:
         region_name = config.get('AWS-CHILES', 'region_name')

@@ -33,8 +33,8 @@ setup(
     author_email = "slava.kitaeff@icrar.org",
     description = "Set of tools to remotely control AWS EC2 envoronment",
     license = "PSF",
-    keywords = "aws remote control visualisation",
-    url = "http://skuareview.net/",
+    keywords = "AWS-EC2 remote control",
+    url = "https://github.com/ICRAR/AWS_RC",
 
     cmdclass={'install': install},
     )
