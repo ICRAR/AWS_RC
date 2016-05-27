@@ -7,7 +7,7 @@ from os.path import isfile
 
 if __name__ == '__main__':
 
-    filename = join(expanduser("~"),'.aws-vis.cfg')
+    filename = join(expanduser("~"),'.ec2-aws.cfg')
     if isfile(filename):
         print "%s already exist. Delete it first if necessary, and run again." % (filename)
         sys.exit(0)

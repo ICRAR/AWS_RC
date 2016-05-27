@@ -16,8 +16,13 @@ You'll need Python 2.3 or higher to use AWS EC2 remote control tool.
 2. Configure
 
 Please ask your AWS administrator for aws_access_key_id, aws_secret_access_key,
-and instanceid of the service to be remotely controlled. Modify ".aws-vis.cfg"
+and instanceid of the service to be remotely controlled. Modify ".ec2-aws.cfg"
 file in your home directory accordingly. Change region_name if necessary.
 
 3. Commands available
-    chiles-vis-start - will start visualisation service.
+
+  3.1 start visualisation service
+  
+    python ec2-start.py --vis
+  or
+    python ec2-start.py -v

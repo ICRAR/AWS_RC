@@ -24,10 +24,9 @@ setup(
     name = "Remote AWS environment control",
     version = "0.1",
     packages = find_packages(),
-    scripts = ['chiles-vis-start.py'],
+    scripts = ['ec2-start.py'],
     setup_requires =['ConfigParser'],
     install_requires = ['ConfigParser', 'boto'],
-    exclude_package_data = ['READ.ME'],
 
     # metadata for upload to PyPI
     author = "Slava Kitaeff",
