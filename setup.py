@@ -25,7 +25,7 @@ setup(
     version = "0.1",
     packages = find_packages(),
     scripts = ['ec2-start.py'],
-    setup_requires =['ConfigParser'],
+    setup_requires =['ConfigParser', 'boto'],
     install_requires = ['ConfigParser', 'boto'],
 
     # metadata for upload to PyPI
